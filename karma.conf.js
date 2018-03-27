@@ -28,6 +28,7 @@ module.exports = function(config) {
     logLevel: config.LOG_INFO,
     autoWatch: true,
     browsers: ['Chrome'],
+    browserDisconnectTolerance: 10, // prevents frequent browser disconnects
     singleRun: false
   });
 };

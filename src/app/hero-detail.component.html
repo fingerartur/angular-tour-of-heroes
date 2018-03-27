@@ -1,11 +1,11 @@
-<div *ngIf="hero">
-  <h2>{{hero.name}} details!</h2>
-  <div>
+<div *ngIf="hero" class="ee-component-hero">
+  <h2 class="ee-name">{{hero.name}} details!</h2>
+  <div class="ee-id">
     <label>id: </label>{{hero.id}}</div>
   <div>
     <label>name: </label>
-    <input [(ngModel)]="hero.name" placeholder="name" />
+    <input [(ngModel)]="hero.name" placeholder="name" class="ee-name-input"/>
   </div>
-  <button (click)="goBack()">Back</button>
-  <button (click)="save()">Save</button>
+  <button (click)="goBack()" class="ee-button-back">Back</button>
+  <button (click)="save()" class="ee-button-save">Save</button>
 </div>
